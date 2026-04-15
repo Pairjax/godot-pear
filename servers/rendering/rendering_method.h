@@ -329,12 +329,10 @@ public:
 	virtual void positional_soft_shadow_filter_set_quality(RS::ShadowQuality p_quality) = 0;
 	virtual void directional_soft_shadow_filter_set_quality(RS::ShadowQuality p_quality) = 0;
 
-	// PEAR / BEGIN / SENDBACK / Environment hookups for rcgi.
 	// RCGI
 	virtual void environment_set_rcgi(RID p_env, bool p_enable) = 0;
 
 	virtual bool environment_get_rcgi_enabled(RID p_env) const = 0;
-	// PEAR / END
 
 	/* Render Buffers */
 

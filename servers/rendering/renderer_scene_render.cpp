@@ -705,7 +705,8 @@ RS::EnvironmentSDFGIYScale RendererSceneRender::environment_get_sdfgi_y_scale(RI
 	return environment_storage.environment_get_sdfgi_y_scale(p_env);
 }
 
-// PEAR / BEGIN / SENDBACK / Environment hookups for rcgi.
+// RCGI
+
 void RendererSceneRender::environment_set_rcgi(RID p_env, bool p_enable) {
 	environment_storage.environment_set_rcgi(p_env, p_enable);
 }
@@ -713,7 +714,6 @@ void RendererSceneRender::environment_set_rcgi(RID p_env, bool p_enable) {
 bool RendererSceneRender::environment_get_rcgi_enabled(RID p_env) const {
 	return environment_storage.environment_get_rcgi_enabled(p_env);
 }
-// PEAR / END
 
 // Adjustments
 
