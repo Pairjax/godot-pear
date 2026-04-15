@@ -1360,6 +1360,12 @@ public:
 	PASS1(environment_set_sdfgi_frames_to_converge, RS::EnvironmentSDFGIFramesToConverge)
 	PASS1(environment_set_sdfgi_frames_to_update_light, RS::EnvironmentSDFGIFramesToUpdateLight)
 
+	// RCGI
+
+	PASS2(environment_set_rcgi, RID, bool)
+
+	PASS1RC(bool, environment_get_rcgi_enabled, RID)
+
 	// Adjustment
 	PASS7(environment_set_adjustment, RID, bool, float, float, float, bool, RID)
 
