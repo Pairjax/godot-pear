@@ -1387,6 +1387,10 @@ public:
 
 	virtual void environment_set_sdfgi_frames_to_update_light(EnvironmentSDFGIFramesToUpdateLight p_update) = 0;
 
+	// PEAR / BEGIN / SENDBACK / Environment hookups for rcgi.
+	virtual void environment_set_rcgi(RID p_env, bool p_enable) = 0;
+	// PEAR / END
+
 	enum EnvironmentFogMode {
 		ENV_FOG_MODE_EXPONENTIAL,
 		ENV_FOG_MODE_DEPTH,

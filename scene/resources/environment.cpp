@@ -599,6 +599,26 @@ void Environment::_update_sdfgi() {
 			sdfgi_probe_bias);
 }
 
+// PEAR / BEGIN / SENDBACK / Environment hookups for rcgi.
+// RCGI
+
+void Environment::set_rcgi_enabled(bool p_enabled) {
+	rcgi_enabled = p_enabled;
+	_update_rcgi();
+}
+
+bool Environment::is_rcgi_enabled() const {
+	return rcgi_enabled;
+}
+
+void Environment::_update_rcgi() {
+	RS::get_singleton()->environment_set_rcgi(
+		environment,
+		rcgi_enabled);
+}
+
+// PEAR / END
+
 // Glow
 
 void Environment::set_glow_enabled(bool p_enabled) {

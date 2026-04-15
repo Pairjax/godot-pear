@@ -875,6 +875,11 @@ public:
 		return 0;
 	}
 
+	// PEAR / BEGIN / SENDBACK / Environment hookups for rcgi.
+	/* RCGI UPDATE */
+	virtual void rcgi_update(const Ref<RenderSceneBuffers> &p_render_buffers, RID p_environment, const Vector3 &p_world_position) override {}
+	// PEAR / END
+
 	/* SKY API */
 
 	RID sky_allocate() override;

@@ -162,6 +162,13 @@ private:
 	float sdfgi_probe_bias = 1.1;
 	void _update_sdfgi();
 
+	// PEAR / BEGIN / SENDBACK / Environment hookups for rcgi.
+	// RCGI
+	bool rcgi_enabled = false;
+	// TODO: Parameters for RCGI
+	void _update_rcgi();
+	// PEAR / END
+
 	// Glow
 	bool glow_enabled = false;
 	Vector<float> glow_levels;
@@ -348,6 +355,12 @@ public:
 	float get_sdfgi_normal_bias() const;
 	void set_sdfgi_probe_bias(float p_bias);
 	float get_sdfgi_probe_bias() const;
+
+	// PEAR / BEGIN / SENDBACK / Environment hookups for rcgi.
+	// RCGI
+	void set_rcgi_enabled(bool p_enabled);
+	bool is_rcgi_enabled() const;
+	// PEAR / END
 
 	// Glow
 	void set_glow_enabled(bool p_enabled);

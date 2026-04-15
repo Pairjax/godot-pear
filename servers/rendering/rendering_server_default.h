@@ -876,6 +876,10 @@ public:
 	FUNC1(environment_set_sdfgi_frames_to_converge, EnvironmentSDFGIFramesToConverge)
 	FUNC1(environment_set_sdfgi_frames_to_update_light, EnvironmentSDFGIFramesToUpdateLight)
 
+	// PEAR / BEGIN / SENDBACK / Environment hookups for rcgi.
+	FUNC2(environment_set_rcgi, RID, bool)
+	// PEAR / END
+
 	FUNC3R(Ref<Image>, environment_bake_panorama, RID, bool, const Size2i &)
 
 	FUNC3(screen_space_roughness_limiter_set_active, bool, float, float)
