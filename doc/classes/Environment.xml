@@ -246,6 +246,11 @@
 		<member name="sdfgi_y_scale" type="int" setter="set_sdfgi_y_scale" getter="get_sdfgi_y_scale" enum="Environment.SDFGIYScale" default="1">
 			The Y scale to use for SDFGI cells. Lower values will result in SDFGI cells being packed together more closely on the Y axis. This is used to balance between quality and covering a lot of vertical ground. [member sdfgi_y_scale] should be set depending on how vertical your scene is (and how fast your camera may move on the Y axis).
 		</member>
+		<member name="rcgi_enabled" type="bool" setter="set_rcgi_enabled" getter="is_rcgi_enabled" default="false">
+			If [code]true[/code], enables radiance cascade global illumination for meshes that have their [member GeometryInstance3D.gi_mode] set to [constant GeometryInstance3D.GI_MODE_STATIC]. RCGI is a real-time global illumination technique which I don't know anything about because I'm dumb!
+			[b]Note:[/b] RCGI is only supported in the Forward+ rendering method, not Mobile or Compatibility.
+			[b]Performance:[/b] RCGI is relatively demanding on the GPU and is not suited to low-end hardware such as integrated graphics (consider [LightmapGI] instead).
+		</member>
 		<member name="sky" type="Sky" setter="set_sky" getter="get_sky">
 			The [Sky] resource used for this [Environment].
 		</member>

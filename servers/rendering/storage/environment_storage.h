@@ -172,6 +172,7 @@ private:
 		float sdfgi_probe_bias = 1.1;
 		RS::EnvironmentSDFGIYScale sdfgi_y_scale = RS::ENV_SDFGI_Y_SCALE_75_PERCENT;
 
+		// RCGI 
 		bool rcgi_enabled = false;
 
 		// Adjustments

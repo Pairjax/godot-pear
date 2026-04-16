@@ -822,7 +822,7 @@ public:
 	virtual uint32_t sdfgi_get_pending_region_cascade(const Ref<RenderSceneBuffers> &p_render_buffers, int p_region) const override;
 	RID sdfgi_get_ubo() const { return gi.sdfgi_ubo; }
 
-	/* SDFGI UPDATE */
+	/* RCGI UPDATE */
 
 	virtual void rcgi_update(const Ref<RenderSceneBuffers> &p_render_buffers, RID p_environment, const Vector3 &p_world_position) override {}
 
